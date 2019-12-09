@@ -78,7 +78,7 @@ class EditUserComponent extends Component {
             <div>
 
 
-                <h2 className="text-center">Edit User</h2>
+                <h2 className="text-center">Editar dados</h2>
                 <form>
                     <Row>
                         <Col xs="6" sm="6" md="6" lg="6" xl="6">

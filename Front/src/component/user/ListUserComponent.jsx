@@ -61,7 +61,8 @@ class ListUserComponent extends Component {
     render() {
         return (
             <div>
-                <h2 className="text-center">User Details</h2>
+                <br></br>
+                <h2 className="text-center">Usuario</h2>
                 <button className="btn btn-danger" style={{ width: '100px' }} onClick={() => this.addUser()}> Add User</button>
                 <table className="table table-striped">
                     <thead>
@@ -72,12 +73,14 @@ class ListUserComponent extends Component {
                             <th>Telefone</th>
                             <th>Cidade</th>
                             <th>Nivel</th>
+                            <th>Ação</th>
                         </tr>
-                    </thead><pre>{JSON.stringify(this.state.users)}</pre>
-
+                    </thead>
+                    {/* <pre>{JSON.stringify(this.state.users)}</pre>
+ */}
 
                     <tbody>
-                        {
+                        {/* {
 
                             this.state.users.map(
                                 user =>
@@ -93,7 +96,29 @@ class ListUserComponent extends Component {
                                         </td>
                                     </tr>
                             )
-                        }
+                        } */}
+                        <tr>
+                            <td>
+                                casa
+                            </td>
+                            <td>
+                                casa@gmail.com
+                            </td>
+                            <td>
+                                613333333
+                            </td>
+                            <td>
+                                São sebastião
+                            </td>
+                            <td>
+                                Adim
+                            </td>
+
+                            <td>
+                                <button className="btn btn-success" > Delete</button>
+                                <button className="btn btn-success" onClick={() => this.editUser('1')} style={{ marginLeft: '20px' }}> Edit</button>
+                            </td>
+                        </tr>
                     </tbody>
                 </table>
 

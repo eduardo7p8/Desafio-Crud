@@ -20,6 +20,7 @@ public class UserService {
 	
 	@Autowired
 	private UsersRepository repo;
+	private List<User> obj;
 	
 
 
@@ -35,7 +36,7 @@ public class UserService {
 		}
 	
 	
-	
+
 
 	
 		public User insert(User obj) {

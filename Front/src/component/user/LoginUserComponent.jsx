@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import ApiService from "../../service/ApiService";
-import { Col, Row, Card, FormGroup, Label, Input } from "reactstrap";
+//import ApiService from "../../service/ApiService";
+import { Container, Col, Row, Card, FormGroup } from "reactstrap";
 
 class LoginUserComponent extends Component {
 
@@ -37,30 +37,41 @@ class LoginUserComponent extends Component {
         return (
             <div>
                 <h2 className="text-center">Login</h2>
-                <form>
+                <Container>
+
+
                     <Row>
-                        <Col xs="12" sm="12" md="6" lg="6" xl="6">
-                            <Card>
-                                <FormGroup>
-                                    <div className="text-left mt-3">
-                                        <div className="form-group">
-                                            <label>Usuario:</label>
-                                            <input type="text" placeholder="usuario" name="usuario" className="form-control" defaultValue={this.state.usuario} />
+                        <Col xs="6" sm="4"></Col>
+                        <Col xs="6" sm="8"> <Row>
+                            <Col xs="12" sm="12" md="6" lg="6" xl="6">
+                                <Card>
+                                    <FormGroup>
+                                        <div className="text-left mt-3">
+                                            <div className="form-group">
+                                                <label>Usuario:</label>
+                                                <input type="text" placeholder="usuario" name="usuario" className="form-control" defaultValue={this.state.usuario} />
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div className="text-left mt-3">
-                                        <div className="form-group">
-                                            <label>Senha:</label>
-                                            <input type="text" placeholder="senha" name="senha" className="form-control" defaultValue={this.state.senha} />
+                                        <div className="text-left mt-3">
+                                            <div className="form-group">
+                                                <label>Senha:</label>
+                                                <input type="text" placeholder="senha" name="senha" className="form-control" defaultValue={this.state.senha} />
+                                            </div>
                                         </div>
-                                    </div>
-                                </FormGroup>
-                            </Card>
-                        </Col>
+                                    </FormGroup>
+                                </Card> <button className="btn btn-success" onClick={this.saveUser}>Entrar</button>
+                            </Col>
+                        </Row></Col>
+                        <Col sm="4"></Col>
                     </Row>
 
-                    <button className="btn btn-success" onClick={this.saveUser}>Entrar</button>
-                </form>
+
+
+                </Container>
+
+
+
+
             </div>
         );
     }

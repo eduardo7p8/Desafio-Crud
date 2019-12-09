@@ -9,9 +9,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 
 import com.br.desafios.domain.User;
-import com.br.desafios.domain.Produto;
+
 import com.br.desafios.repositories.UsersRepository;
-import com.br.desafios.repositories.ProdutoRepository;
+
 
 
 

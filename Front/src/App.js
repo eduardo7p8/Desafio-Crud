@@ -12,6 +12,7 @@ function App() {
             <Router>
                 <div className="col-md-12">
                     <h1 className="text-center" style={style}>Desafio Mirante</h1>
+                    <br />
                     <Switch>
                         <Route path="/" exact component={LoginUserComponent} />
                         <Route path="/login" exact component={LoginUserComponent} />
@@ -20,6 +21,7 @@ function App() {
                         <Route path="/edit-user" component={EditUserComponent} />
                     </Switch>
                 </div>
+
             </Router>
         </div>
     );
